@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #000000 0%, #0e1644 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.cv-header {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.cv-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.cv-header p {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.cv-content {
+  padding: 40px;
+  background: #fafbfc;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin: 10px;
+  }
+  
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .cv-content {
+    padding: 20px;
+  }
+}
